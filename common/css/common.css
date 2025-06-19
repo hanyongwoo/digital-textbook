@@ -140,7 +140,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 }
 
 
-/*�듭떖�댁슜*/
+/*í•µì‹¬ë‚´ìš©*/
 .book-top-sub-txt-1{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 226px; top: 34px; letter-spacing: 1px;}
 .book-top-main-txt-1{font-family:'Cafe24Dangdanghae'; font-size: 45px; position: absolute; left: 210px; top: 69px; letter-spacing: 2.5px;}
 
@@ -150,7 +150,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-04_02_01 .book-top-sub-txt-1{letter-spacing: -0.6px;}
 .wrap-04_02_01 .book-top-main-txt-1{letter-spacing: 2.4px;}
 
-/*�듭떖�쒕룞*/
+/*í•µì‹¬í™œë™*/
 .book-top-sub-txt-2{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 246px; top: 34px; letter-spacing: 1px;}
 .book-top-main-txt-2{font-family:'Cafe24Dangdanghae'; font-size: 45px; position: absolute; left: 230px; top: 69px; letter-spacing: -1.5px;}
 
@@ -164,13 +164,13 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 
 .wrap-05_01_01 .book-top-main-txt-2{top:72px;}
 
-/*蹂댁“�쒕룞*/
+/*ë³´ì¡°í™œë™*/
 .book-top-sub-txt-3{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 198px; top: 34px; letter-spacing: 1px;}
 .book-top-main-txt-3{font-family:'Cafe24Dangdanghae'; font-size: 45px; position: absolute; left: 188px; top: 69px; letter-spacing: 0px;}
 
 .wrap-04_01_01 .book-top-sub-txt-3{letter-spacing: -0.8px;}
 .wrap-04_02_01 .book-top-main-txt-3{letter-spacing: -2.2px;}
-/*�� �뚯븘遊먯슂*/
+/*ë” ì•Œì•„ë´ìš”*/
 .book-top-sub-txt-4{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 218px; top: 43px; letter-spacing: 1px;}
 .book-top-main-txt-4{font-family:'Cafe24Dangdanghae'; font-size: 45px; position: absolute; left: 202px; top: 81px; letter-spacing: 0px;}
 
@@ -192,12 +192,12 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-05_01_01 .book-top-main-txt-4,
 .wrap-05_02_01 .book-top-main-txt-4 {left: 152px;}
 
-/*�숈뒿�됯�*/
+/*í•™ìŠµí‰ê°€*/
 .book-top-sub-txt-5{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 201px; top: 64px; letter-spacing: 1px;}
 .book-top-main-txt-5{font-family:'Cafe24Dangdanghae'; font-size: 55px; position: absolute; left: 197px; top: 106px; letter-spacing: 0px;}
 
 .book-top-main-txt-5-right{font-family:'NanumGothic'; font-weight: bold; font-size: 26px; position: absolute; left: 748px; top: 139px; letter-spacing: 0px; text-align: center; width: 102px;}
-/*�뺣━�섍린*/
+/*ì •ë¦¬í•˜ê¸°*/
 .book-top-sub-txt-6{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 190px; top: 24px; letter-spacing: 1px;}
 .book-top-main-txt-6{font-family:'Cafe24Dangdanghae'; font-size: 50px; position: absolute; left: 188px; top: 65px; letter-spacing: 0px;}
 .wrap-04_01_01 .book-top-main-txt-6{font-size: 40px; top: 74px;}
@@ -208,7 +208,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 
 .book-txt{font-family:'NanumBarunGothicBold'; font-size: 32px; position: absolute; left: 98px; top: 69px;}
 
-/*李쎌껜*/
+/*ì°½ì²´*/
 .wrap-01_01_01 .unit-main-num,		.wrap-01_02_01 .unit-main-num		{font-size: 180px;}
 .wrap-01_01_01 .unit-main-guide,	.wrap-01_02_01 .unit-main-guide		{font-size: 35px;}
 .wrap-01_01_01 .unit-main-title,	.wrap-01_02_01 .unit-main-title		{font-size: 80px; letter-spacing: -5px;}
@@ -507,7 +507,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-15_01_01 .book-top-sub-1-title, .wrap-16_01_01 .book-top-sub-1-title, .wrap-17_01_01 .book-top-sub-1-title, .wrap-18_01_01 .book-top-sub-1-title, .wrap-19_01_01 .book-top-sub-1-title,
 .wrap-20_01_01 .book-top-sub-1-title, .wrap-21_01_01 .book-top-sub-1-title, .wrap-22_01_01 .book-top-sub-1-title, .wrap-23_01_01 .book-top-sub-1-title, .wrap-99_01_01 .book-top-sub-1-title{font-family:'NanumGothic'; font-weight: bold; font-size: 24px; position: absolute; left: 315px; top: 65px; letter-spacing: -1.5px;}
 
-/* �� �뚯븘蹂닿린 */
+/* ë” ì•Œì•„ë³´ê¸° */
 .wrap-15_01_01 .book-top-sub-txt-2,.wrap-15_01_02 .book-top-sub-txt-2,.wrap-15_02_01 .book-top-sub-txt-2,.wrap-15_02_02 .book-top-sub-txt-2,
 .wrap-16_01_01 .book-top-sub-txt-2,.wrap-16_01_02 .book-top-sub-txt-2,.wrap-16_02_01 .book-top-sub-txt-2,.wrap-16_02_02 .book-top-sub-txt-2{left: 166px; top: 29px; letter-spacing: -2px;}
 
@@ -516,7 +516,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-15_01_01 .book-top-main-txt-2,.wrap-15_01_02 .book-top-main-txt-2,.wrap-15_02_01 .book-top-main-txt-2,.wrap-15_02_02 .book-top-main-txt-2,
 .wrap-16_01_01 .book-top-main-txt-2,.wrap-16_01_02 .book-top-main-txt-2,.wrap-16_02_01 .book-top-main-txt-2,.wrap-16_02_02 .book-top-main-txt-2{left: 183px; top: 63px; font-size: 37px; font-family: 'BMJUA'; letter-spacing: -1px;}
 
-/* �� �뚯븘蹂닿린 */
+/* ë” ì•Œì•„ë³´ê¸° */
 .wrap-16_01_01 .book-top-sub-txt-3,.wrap-16_01_02 .book-top-sub-txt-3,.wrap-16_02_01 .book-top-sub-txt-3,.wrap-16_02_02 .book-top-sub-txt-3{left: 166px; top: 29px; letter-spacing: -2px;}
 .wrap-16_01_01 .book-top-main-txt-3,.wrap-16_01_02 .book-top-main-txt-3,.wrap-16_02_01 .book-top-main-txt-3,.wrap-16_02_02 .book-top-main-txt-3{left: 182px; top: 64px; font-size: 37px; font-family: 'BMJUA'; letter-spacing: 0px;}
 
@@ -527,7 +527,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-16_01_01 .book-top-main-txt-2 {left: 183px; top: 63px; font-size: 37px; font-family: 'BMJUA'; letter-spacing: -1px;}
 
 
-/* ���댄꽣 */
+/* ë†€ì´í„° */
 .wrap-15_01_01 .book-top-sub-txt-5,.wrap-15_01_02 .book-top-sub-txt-5,.wrap-15_02_01 .book-top-sub-txt-5,.wrap-15_02_02 .book-top-sub-txt-5,
 .wrap-16_01_01 .book-top-sub-txt-5,.wrap-16_01_02 .book-top-sub-txt-5,.wrap-16_02_01 .book-top-sub-txt-5,.wrap-16_02_02 .book-top-sub-txt-5{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 424px; top: 57px; letter-spacing: 1px;}
 
@@ -547,7 +547,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-21_01_01 .book-top-main-txt-5, .wrap-22_01_01 .book-top-main-txt-5, .wrap-23_01_01 .book-top-main-txt-5, .wrap-99_01_01 .book-top-main-txt-5{font-family:'Cafe24Dangdanghae'; font-size: 48px; position: absolute; left: 258px; top: 81px; letter-spacing: -0.3px;}
 
 
-/* �숈뒿�됯� */
+/* í•™ìŠµí‰ê°€ */
 .wrap-15_01_01 .book-top-sub-txt-6,.wrap-15_01_02 .book-top-sub-txt-6,.wrap-15_02_01 .book-top-sub-txt-6,.wrap-15_02_02 .book-top-sub-txt-6,
 .wrap-16_01_01 .book-top-sub-txt-6,.wrap-16_01_02 .book-top-sub-txt-6,.wrap-16_02_01 .book-top-sub-txt-6,.wrap-16_02_02 .book-top-sub-txt-6{font-family:'NanumGothic'; font-weight: bold; font-size: 22px; position: absolute; left: 171px; top: 27px; letter-spacing: -1px;}
 
@@ -562,7 +562,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-98_01_01 .book-top-main-txt-6, .wrap-99_01_01 .book-top-main-txt-6{font-family:'NanumBarunGothicBold'; font-size: 44px; position: absolute; left: 185px; top: 74px; letter-spacing: -3px;}
 .wrap-98_01_01 .book-top-main-num-6, .wrap-99_01_01 .book-top-main-num-6{text-align: center; font-family:'NanumBarunGothicBold'; font-size: 31px; position: absolute; left: 91px; top: 58px; letter-spacing: -3px;} */
 
-/* �� 而� 留뚰솕 */
+/* í•œ ì»· ë§Œí™” */
 .wrap-15_01_01 .book-top-sub-txt-7,.wrap-15_01_02 .book-top-sub-txt-7,.wrap-15_02_01 .book-top-sub-txt-7,.wrap-15_02_02 .book-top-sub-txt-7,
 .wrap-16_01_01 .book-top-sub-txt-7,.wrap-16_01_02 .book-top-sub-txt-7,.wrap-16_02_01 .book-top-sub-txt-7,.wrap-16_02_02 .book-top-sub-txt-7{position: absolute; display: inline-block; left:228px; top:26px; font-family:'BMJUA';  font-size:27px;}
 
@@ -576,7 +576,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 .wrap-17_01_01 .book-top-main-txt-7, .wrap-18_01_01 .book-top-main-txt-7, .wrap-19_01_01 .book-top-main-txt-7, .wrap-20_01_01 .book-top-main-txt-7,
 .wrap-21_01_01 .book-top-main-txt-7, .wrap-22_01_01 .book-top-main-txt-7, .wrap-23_01_01 .book-top-main-txt-7, .wrap-99_01_01 .book-top-main-txt-7{position: absolute; display: inline-block; left: 166px; top: 81px; font-family:'BMJUA';  font-size:47px; letter-spacing: 1px;}
 
-/*�щ＼留� 蹂꾨룄濡� 吏���*/
+/*í¬ë¡¬ë§Œ ë³„ë„ë¡œ ì§€ì •*/
 @media print and (-webkit-min-device-pixel-ratio:0) and (orientation: landscape)
 {
 	#wrap.even{zoom:0.7}
@@ -918,7 +918,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 	}
 }
 
-/*�꾩�留�*/
+/*ë„ì›€ë§*/
 .helpttl {
   position: absolute;
 	font-size: 60px;
@@ -950,7 +950,7 @@ html, body{position:absolute; width:100%; height:100%; margin:0; padding:0; back
 }
 
 
-/* �대┃ o,x �ъ씠利� */
+/* í´ë¦­ o,x ì‚¬ì´ì¦ˆ */
 .wrap-05_01_01 .click-active-obj.chk-box.yes,
 .wrap-05_01_01 .click-active-obj.chk-box.not{
 	background-size:79px 80px;

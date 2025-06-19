@@ -11,176 +11,422 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/common/css/font.css">
+    <link rel="stylesheet" href="/common/css/common.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/portrait.css">
+    <link rel="stylesheet" href="/css/landscape.css">
+    <link rel="stylesheet" href="/css/viewer.css">
+    <link rel="stylesheet" href="/css/pagepop.css">
+    <link rel="stylesheet" href="/css/thumnail.css">
+    <link rel="stylesheet" href="/css/viewerList.css">
+    <link rel="stylesheet" href="/css/searchList.css">
+    <link rel="stylesheet" href="/css/amList.css">
+    <link rel="stylesheet" href="/css/referenceList.css">
+    <link rel="stylesheet" href="/css/bookMark.css">
+    
+    
+    <script>
+        // URL parameters
+        var bookId = "17_01_01";
+        var unitId = "1";
+        var pageType = "odd"; // or "even" based on screen orientation
+    </script>
 </head>
 
 <body>
-    <div id="wrap" class="wrap-17_01_01" page="left">
+    <div id="wrap" class="wrap-17_01_01 odd" page="left">
         <!-- Accessibility helper -->
-        <div id="wrap-acc" class="sr-only" tabindex="1" role="text">멀티미디어북</div>
+        <div id="wrap-acc" class="s_reader focusRemove" tabindex="1" role="text" title="멀티미디어북" aria-label="멀티미디어북">멀티미디어북</div>
         
         <!-- Top Navigation -->
         <div id="top">
             <div id="top-left-box">
-                <button data-btn="ui-btn" class="icon-gobook-btn icon-btn" title="본문 바로가기" role="button" tabindex="1">
-                    <div class="icon">📖</div>
-                    <div class="text">본문 바로가기</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-list-btn icon-btn" title="목차이동" role="button" tabindex="1">
-                    <div class="icon">📋</div>
-                    <div class="text">목차이동</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-sign-lang-btn icon-btn" title="수어보기" role="button" tabindex="1">
-                    <div class="icon">👋</div>
-                    <div class="text">수어보기</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-am-btn icon-btn" title="대체자료" role="button" tabindex="1">
-                    <div class="icon">📁</div>
-                    <div class="text">대체자료</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-reference-btn icon-btn" title="학습 자료실" role="button" tabindex="1">
-                    <div class="icon">📚</div>
-                    <div class="text">학습 자료실</div>
-                </button>
+                <button data-btn="ui-btn" class="icon-gobook-btn icon-btn" title="본문 바로가기" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-list-btn icon-btn" title="목차이동" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-sign-lang-btn icon-btn" title="수어보기" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-am-btn icon-btn" title="대체자료" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-reference-btn icon-btn" title="학습 자료실" role="button" tabindex="1"></button>
             </div>
 
             <div id="top-center-box">
+                <button class="navi-page-btn navi-first-move-btn" title="첫 페이지로 이동"></button>
+                <button class="navi-page-btn navi-prev-move-btn" title="이전 페이지로 이동"></button>
                 <div class="navi-page-text" aria-live="polite">
                     <span class="cur-page">1</span> / <span class="max-page">32</span>
                 </div>
+                <button class="navi-page-btn navi-next-move-btn" title="다음 페이지로 이동"></button>
+                <button class="navi-page-btn navi-last-move-btn" title="마지막 페이지로 이동"></button>
             </div>
 
             <div id="top-right-box">
-                <button data-btn="ui-btn" class="icon-zoom-btn icon-btn" title="확대보기" role="button" tabindex="1">
-                    <div class="icon">🔍</div>
-                    <div class="text">확대보기</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-library-btn icon-btn" title="사전검색" role="button" tabindex="1">
-                    <div class="icon">📖</div>
-                    <div class="text">사전검색</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-print-btn icon-btn" title="인쇄하기" role="button" tabindex="1">
-                    <div class="icon">🖨️</div>
-                    <div class="text">인쇄하기</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-search-btn icon-btn" title="내용 찾기" role="button" tabindex="1">
-                    <div class="icon">🔎</div>
-                    <div class="text">내용 찾기</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-bookmark-btn icon-btn" title="책갈피" role="button" tabindex="1">
-                    <div class="icon">🔖</div>
-                    <div class="text">책갈피</div>
-                </button>
-                <button data-btn="ui-btn" class="icon-reset-btn icon-btn" title="전체 초기화" role="button" tabindex="1">
-                    <div class="icon">🔄</div>
-                    <div class="text">전체 초기화</div>
-                </button>
+                <button data-btn="ui-btn" class="icon-zoom-btn icon-btn on" title="확대보기" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-library-btn icon-btn" title="사전검색" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-ruler-btn icon-btn" title="자" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-calculator-btn icon-btn" title="계산기" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-print-btn icon-btn" title="인쇄하기" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-search-btn icon-btn" title="내용 찾기" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-bookmark-btn icon-btn" title="책갈피" role="button" tabindex="1"></button>
+                <button data-btn="ui-btn" class="icon-reset-btn icon-btn" title="전체 초기화" role="button" tabindex="1"></button>
             </div>
         </div>
 
         <!-- Main Content Area -->
         <div id="middle">
-            <!-- Single Page Content -->
-            <div id="main-page" class="page-box">
-                <div id="main-box" class="contents-box">
-                    <div class="book-page">
-                        <!-- Page Background -->
-                        <div class="page-background">
-                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1400' height='1000'%3E%3Crect width='100%25' height='100%25' fill='%23f8f9fa'/%3E%3C/svg%3E" 
-                                 alt="페이지 배경" title="페이지 배경">
-                        </div>
-                        
-                        <!-- Unit Badge -->
-                        <div class="unit-badge">1단원</div>
-                        
-                        <!-- Main Content Box -->
-                        <div class="main-content-box">
-                            <div class="unit-number">01</div>
-                            <div class="unit-title">다양한 주변의<br>소리</div>
-                            <div class="unit-objectives">
-                                <div class="objective-item"><span class="number">1</span> 다양한 소리에 주의 기울이기</div>
-                                <div class="objective-item"><span class="number">2</span> 장소에 따른 소리에 반응하기</div>
-                                <div class="objective-item"><span class="number">3</span> 말소리 듣고 반응하기</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Character Illustration -->
-                        <div class="character-illustration">
-                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500'%3E%3Crect width='100%25' height='100%25' fill='%23ddd'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23666' font-size='20'%3E캐릭터 이미지%3C/svg%3E" 
-                                 alt="서아 캐릭터" title="서아 캐릭터">
-                        </div>
-                        
-                        <!-- Interactive Buttons -->
-                        <button class="video-show-badge-btn" 
-                                data-action="video" 
-                                tabindex="4" 
-                                aria-label="영상보기">
-                            <span class="btn-icon">▶</span>
-                            <span class="btn-text">영상보기</span>
-                        </button>
-                        
-                        <button class="essence-btn" 
-                                data-essence="popup_1" 
-                                tabindex="4" 
-                                aria-label="에센스">
-                            <span class="btn-icon">💡</span>
-                            <span class="btn-text">서아의 아침</span>
-                        </button>
-                        
-                        <!-- Page Numbers -->
-                        <div class="page-number left">1</div>
-                        <div class="page-number right">2</div>
+            <!-- Left Page -->
+            <div id="left-page" class="page-box">
+                <div id="left-box" class="contents-box">
+                    <div class="book-page on">
+                        <!-- Page will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Page (for even layout) -->
+            <div id="right-page" class="page-box">
+                <div id="right-box" class="contents-box">
+                    <div class="book-page on">
+                        <!-- Page will be loaded dynamically -->
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Page Navigation -->
-        <button id="ui-sub-prev-btn" class="ui-sub-navi-btn" title="이전 페이지 이동" tabindex="9999" aria-label="이전 페이지 이동">
-            <span>‹</span>
-        </button>
-        <button id="ui-sub-next-btn" class="ui-sub-navi-btn" title="다음 페이지 이동" tabindex="9999" aria-label="다음 페이지 이동">
-            <span>›</span>
-        </button>
+        <button id="ui-sub-prev-btn" class="ui-sub-navi-btn" title="이전 페이지 이동" tabindex="9999" aria-label="이전 페이지 이동"></button>
+        <button id="ui-sub-next-btn" class="ui-sub-navi-btn" title="다음 페이지 이동" tabindex="9999" aria-label="다음 페이지 이동"></button>
 
         <!-- Bottom Controls -->
         <div id="bottom">
-            <button class="bottom-btn essence-open-btn" title="멀티미디어북 에센스" tabindex="1">
-                <div class="bottom-btn-icon">💡</div>
-                <div class="bottom-btn-text">멀티미디어북 에센스</div>
-            </button>
-            <button class="bottom-btn pack-open-btn" title="학습꾸러미" tabindex="1">
-                <div class="bottom-btn-icon">📦</div>
-                <div class="bottom-btn-text">학습꾸러미</div>
-            </button>
-            <button class="bottom-btn thumnail-btn" title="페이지 모아보기" tabindex="1">
-                <div class="bottom-btn-icon">📄</div>
-                <div class="bottom-btn-text">페이지 모아보기</div>
-            </button>
+            <button class="essence-open-btn" title="멀티미디어북 에센스"></button>
+            <button class="pack-open-btn" title="학습꾸러미"></button>
+            <button class="thumnail-btn" title="페이지 모아보기"></button>
+            <button class="examin-link-btn" title="학습평가" style="display:none;"></button>
+        </div>
+        
+        <!-- Popup Windows -->
+        <!-- Book Thumbnail Popup -->
+        <div id="book-thumnail" class="book-popup">
+            <div id="book-thumnail-obj-box">
+                <div id="book-thumnail-top">
+                    <div id="book-thumnail-top-title"></div>
+                    <button class="book-popup-close-btn" title="닫기"></button>
+                </div>
+                <div id="book-thumnail-middle">
+                    <!-- Thumbnails will be loaded here -->
+                </div>
+            </div>
         </div>
 
-        <!-- Popup Windows -->
-        <div class="popup_view" data-popup-name="popup_1" tabindex="5" aria-label="팝업 영역">
-            <div class="popup_box">
-                <div class="popup_header">
-                    <div class="popup_title" tabindex="6" aria-label="서아의 아침">서아의 아침</div>
-                    <button class="popup_close_btn" tabindex="1000" aria-label="활동창 닫기">×</button>
-                </div>
-                <div class="popup_content">
-                    <div class="popup_video_box">
-                        <div class="video_play_embed_box">
-                            <video class="js-player" controls>
-                                <source src="about:blank" type="video/mp4">
-                                비디오를 지원하지 않는 브라우저입니다.
-                            </video>
-                        </div>
+        <!-- Viewer List Popup -->
+        <div id="viewerList-box" class="book-popup">
+            <div id="viewerList-box-wrap">
+                <div id="viewerList-top-title"></div>
+                <button class="book-popup-close-btn" title="닫기"></button>
+                <div id="viewerList-con-box">
+                    <div class="unit-box">
+                        <!-- Content will be loaded here -->
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Search List Popup -->
+        <div id="searchList-box" class="book-popup">
+            <div id="searchList-box-wrap">
+                <div id="searchList-top-title"></div>
+                <button class="book-popup-close-btn" title="닫기"></button>
+                <div id="searchList-con-box">
+                    <div id="search-wrap">
+                        <label for="search-input">검색어</label>
+                        <input type="text" id="search-input" class="search-area" placeholder="검색어를 입력하세요">
+                        <button class="search-btn" title="검색"></button>
+                    </div>
+                    <div class="unit-box">
+                        <!-- Search results will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AM List Popup -->
+        <div id="amList-box" class="book-popup">
+            <div id="amList-box-wrap">
+                <div id="amList-top-title"></div>
+                <button class="book-popup-close-btn" title="닫기"></button>
+                <div id="amList-con-box">
+                    <div class="unit-box">
+                        <!-- AM content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reference List Popup -->
+        <div id="referenceList-box" class="book-popup">
+            <div id="referenceList-box-wrap">
+                <div id="referenceList-top-title"></div>
+                <button class="book-popup-close-btn" title="닫기"></button>
+                <div id="referenceList-con-box">
+                    <div class="unit-box">
+                        <!-- Reference content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bookmark Popup -->
+        <div id="bookMark-box" class="book-popup">
+            <div id="bookMark-box-wrap">
+                <div id="bookMark-top-title"></div>
+                <button class="book-popup-close-btn" title="닫기"></button>
+                <div id="bookMark-con-box">
+                    <div class="unit-box">
+                        <!-- Bookmarks will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ruler Tool -->
+        <div id="ruler-pop"></div>
+
+        <!-- Calculator Tool -->
+        <div id="calculator-pop">
+            <div class="calculator-cont">
+                <div class="calculator-view-mod"></div>
+                <div class="calculator-view">0</div>
+                <div id="c_on" class="on"></div>
+                <div id="c_reset"></div>
+                <div id="c_0"></div>
+                <div id="c_1"></div>
+                <div id="c_2"></div>
+                <div id="c_3"></div>
+                <div id="c_4"></div>
+                <div id="c_5"></div>
+                <div id="c_6"></div>
+                <div id="c_7"></div>
+                <div id="c_8"></div>
+                <div id="c_9"></div>
+                <div id="c_mul"></div>
+                <div id="c_div"></div>
+                <div id="c_add"></div>
+                <div id="c_min"></div>
+                <div id="c_equ"></div>
             </div>
         </div>
     </div>
 
     <!-- Custom Scripts -->
-    <script src="js/viewer.js"></script>
+    <script src="/js/bookData.js"></script>
+    <script src="/js/bookloader.js"></script>
+    <script src="/js/booknavi.js"></script>
+    <script src="/js/pageAccessbility.js"></script>
+    <script src="/js/pageEvent.js"></script>
+    <script src="/js/keyEvent.js"></script>
+    <script src="/js/setKeyEvent.js"></script>
+    <script src="/js/setPageEvent.js"></script>
+    <script src="/common/js/bookData.js"></script>
+
+    
+    <script>
+        // Initialize application
+        $(document).ready(function() {
+            // Show wrap element
+            $("#wrap").show().css({
+                "display": "block",
+                "visibility": "visible", 
+                "opacity": "1"
+            });
+            
+            // Set page type based on orientation
+            if (window.innerWidth > window.innerHeight) {
+                pageType = "even";
+                $("#wrap").removeClass("odd").addClass("even");
+            } else {
+                pageType = "odd";
+                $("#wrap").removeClass("even").addClass("odd");
+            }
+            
+            // Initialize book data with fallback
+            if (typeof getBookData !== 'undefined') {
+                bookData = new getBookData(function() {
+                    if (typeof bookLoaderEvent !== 'undefined') {
+                        bookLoaer = new bookLoaderEvent();
+                    }
+                    if (typeof pageNavi !== 'undefined') {
+                        navi = new pageNavi();
+                    }
+                    // Load initial page
+                    if (bookLoaer && bookData) {
+                        bookLoaer.pageLoad(bookData.curPage || 1);
+                    }
+                    // Set keyboard events
+                    if (typeof setKeyEvent !== 'undefined') {
+                        setKeyEvent();
+                    }
+                });
+            } else {
+                // Fallback initialization
+                console.log('Book data not available, using demo mode');
+                demoInit();
+            }
+            
+            // Navigation buttons
+            $(".navi-first-move-btn").click(function() {
+                if (navi) navi.movePage(bookData.minPage || 1, this);
+            });
+            
+            $(".navi-prev-move-btn").click(function() {
+                if (navi) navi.prevPage();
+            });
+            
+            $(".navi-next-move-btn").click(function() {
+                if (navi) navi.nextPage();
+            });
+            
+            $(".navi-last-move-btn").click(function() {
+                if (navi) navi.movePage(bookData.maxPage || 32, this);
+            });
+            
+            // Popup buttons
+            $(".icon-list-btn").click(function() {
+                $("#viewerList-box").show().fadeIn();
+            });
+            
+            $(".icon-search-btn").click(function() {
+                $("#searchList-box").show().fadeIn();
+            });
+            
+            $(".icon-am-btn").click(function() {
+                $("#amList-box").show().fadeIn();
+            });
+            
+            $(".icon-reference-btn").click(function() {
+                $("#referenceList-box").show().fadeIn();
+            });
+            
+            $(".icon-bookmark-btn").click(function() {
+                $("#bookMark-box").show().fadeIn();
+            });
+            
+            $(".thumnail-btn").click(function() {
+                $("#book-thumnail").show().fadeIn();
+            });
+            
+            // Close buttons
+            $(".book-popup-close-btn").click(function() {
+                $(this).closest(".book-popup").fadeOut();
+            });
+            
+            // Other buttons
+            $(".icon-print-btn").click(function() {
+                window.print();
+            });
+            
+            $(".icon-reset-btn").click(function() {
+                if (confirm("모든 학습 기록을 초기화하시겠습니까?")) {
+                    location.reload();
+                }
+            });
+            
+            $(".icon-sign-lang-btn").click(function() {
+                $(this).toggleClass("on");
+            });
+            
+            // Zoom functionality
+            var zoomLevel = 1;
+            $(".icon-zoom-btn").click(function() {
+                if ($(this).hasClass("on")) {
+                    zoomLevel = zoomLevel >= 2 ? 1 : zoomLevel + 0.25;
+                    $("#middle").css({
+                        "transform": "scale(" + zoomLevel + ")",
+                        "transform-origin": "center top"
+                    });
+                }
+            });
+            
+            // Ruler
+            $(".icon-ruler-btn").click(function() {
+                $("#ruler-pop").toggle();
+                if ($("#ruler-pop").is(":visible")) {
+                    $("#ruler-pop").draggable();
+                }
+            });
+            
+            // Calculator
+            $(".icon-calculator-btn").click(function() {
+                $("#calculator-pop").toggle();
+                if ($("#calculator-pop").is(":visible")) {
+                    $("#calculator-pop").draggable();
+                }
+            });
+        });
+        
+        // Demo initialization function
+        function demoInit() {
+            // Set demo data
+            window.bookData = {
+                minPage: 1,
+                maxPage: 32,
+                curPage: 1
+            };
+            
+            // Update page display
+            $(".cur-page").text(1);
+            $(".max-page").text(32);
+            
+            // Show demo content
+            $("#left-page .book-page").html(`
+                <div style="padding: 50px; text-align: center;">
+                    <h1 style="color: #333; margin-bottom: 20px;">디지털 E-Book 뷰어</h1>
+                    <p style="color: #666; font-size: 18px;">페이지 1</p>
+                    <div style="margin-top: 30px;">
+                        <button class="video-show-badge-btn" style="padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                            영상보기
+                        </button>
+                    </div>
+                </div>
+            `);
+            
+            $("#right-page .book-page").html(`
+                <div style="padding: 50px; text-align: center;">
+                    <h1 style="color: #333; margin-bottom: 20px;">디지털 E-Book 뷰어</h1>
+                    <p style="color: #666; font-size: 18px;">페이지 2</p>
+                </div>
+            `);
+            
+            // Simple navigation
+            window.navi = {
+                prevPage: function() {
+                    var cur = parseInt($(".cur-page").text());
+                    if (cur > 1) {
+                        $(".cur-page").text(cur - 1);
+                    }
+                },
+                nextPage: function() {
+                    var cur = parseInt($(".cur-page").text());
+                    if (cur < 32) {
+                        $(".cur-page").text(cur + 1);
+                    }
+                },
+                movePage: function(page) {
+                    $(".cur-page").text(page);
+                }
+            };
+        }
+        
+        // Page load complete callback
+        window.pageLoadComplte = function() {
+            if (typeof pageAccessibilitySetting !== 'undefined') {
+                pageAccessibilitySetting();
+            }
+            if (typeof setPageEvent !== 'undefined') {
+                setPageEvent();
+            }
+            $("#wrap #middle").css({"visibility":"visible","opacity":"1"});
+        };
+    </script>
 </body>
 </html>
