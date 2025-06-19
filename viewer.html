@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>[국립특수교육원] 디지털 E-Book</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap-17_01_01" page="left">
+        <!-- Accessibility helper -->
+        <div id="wrap-acc" class="sr-only" tabindex="1" role="text">멀티미디어북</div>
+        
+        <!-- Top Navigation -->
+        <div id="top">
+            <div id="top-left-box">
+                <button data-btn="ui-btn" class="icon-gobook-btn icon-btn" title="본문 바로가기" role="button" tabindex="1">
+                    <div class="icon">📖</div>
+                    <div class="text">본문 바로가기</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-list-btn icon-btn" title="목차이동" role="button" tabindex="1">
+                    <div class="icon">📋</div>
+                    <div class="text">목차이동</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-sign-lang-btn icon-btn" title="수어보기" role="button" tabindex="1">
+                    <div class="icon">👋</div>
+                    <div class="text">수어보기</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-am-btn icon-btn" title="대체자료" role="button" tabindex="1">
+                    <div class="icon">📁</div>
+                    <div class="text">대체자료</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-reference-btn icon-btn" title="학습 자료실" role="button" tabindex="1">
+                    <div class="icon">📚</div>
+                    <div class="text">학습 자료실</div>
+                </button>
+            </div>
+
+            <div id="top-center-box">
+                <div class="navi-page-text" aria-live="polite">
+                    <span class="cur-page">1</span> / <span class="max-page">32</span>
+                </div>
+            </div>
+
+            <div id="top-right-box">
+                <button data-btn="ui-btn" class="icon-zoom-btn icon-btn" title="확대보기" role="button" tabindex="1">
+                    <div class="icon">🔍</div>
+                    <div class="text">확대보기</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-library-btn icon-btn" title="사전검색" role="button" tabindex="1">
+                    <div class="icon">📖</div>
+                    <div class="text">사전검색</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-print-btn icon-btn" title="인쇄하기" role="button" tabindex="1">
+                    <div class="icon">🖨️</div>
+                    <div class="text">인쇄하기</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-search-btn icon-btn" title="내용 찾기" role="button" tabindex="1">
+                    <div class="icon">🔎</div>
+                    <div class="text">내용 찾기</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-bookmark-btn icon-btn" title="책갈피" role="button" tabindex="1">
+                    <div class="icon">🔖</div>
+                    <div class="text">책갈피</div>
+                </button>
+                <button data-btn="ui-btn" class="icon-reset-btn icon-btn" title="전체 초기화" role="button" tabindex="1">
+                    <div class="icon">🔄</div>
+                    <div class="text">전체 초기화</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div id="middle">
+            <!-- Single Page Content -->
+            <div id="main-page" class="page-box">
+                <div id="main-box" class="contents-box">
+                    <div class="book-page">
+                        <!-- Page Background -->
+                        <div class="page-background">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1400' height='1000'%3E%3Crect width='100%25' height='100%25' fill='%23f8f9fa'/%3E%3C/svg%3E" 
+                                 alt="페이지 배경" title="페이지 배경">
+                        </div>
+                        
+                        <!-- Unit Badge -->
+                        <div class="unit-badge">1단원</div>
+                        
+                        <!-- Main Content Box -->
+                        <div class="main-content-box">
+                            <div class="unit-number">01</div>
+                            <div class="unit-title">다양한 주변의<br>소리</div>
+                            <div class="unit-objectives">
+                                <div class="objective-item"><span class="number">1</span> 다양한 소리에 주의 기울이기</div>
+                                <div class="objective-item"><span class="number">2</span> 장소에 따른 소리에 반응하기</div>
+                                <div class="objective-item"><span class="number">3</span> 말소리 듣고 반응하기</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Character Illustration -->
+                        <div class="character-illustration">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500'%3E%3Crect width='100%25' height='100%25' fill='%23ddd'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23666' font-size='20'%3E캐릭터 이미지%3C/svg%3E" 
+                                 alt="서아 캐릭터" title="서아 캐릭터">
+                        </div>
+                        
+                        <!-- Interactive Buttons -->
+                        <button class="video-show-badge-btn" 
+                                data-action="video" 
+                                tabindex="4" 
+                                aria-label="영상보기">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">영상보기</span>
+                        </button>
+                        
+                        <button class="essence-btn" 
+                                data-essence="popup_1" 
+                                tabindex="4" 
+                                aria-label="에센스">
+                            <span class="btn-icon">💡</span>
+                            <span class="btn-text">서아의 아침</span>
+                        </button>
+                        
+                        <!-- Page Numbers -->
+                        <div class="page-number left">1</div>
+                        <div class="page-number right">2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Navigation -->
+        <button id="ui-sub-prev-btn" class="ui-sub-navi-btn" title="이전 페이지 이동" tabindex="9999" aria-label="이전 페이지 이동">
+            <span>‹</span>
+        </button>
+        <button id="ui-sub-next-btn" class="ui-sub-navi-btn" title="다음 페이지 이동" tabindex="9999" aria-label="다음 페이지 이동">
+            <span>›</span>
+        </button>
+
+        <!-- Bottom Controls -->
+        <div id="bottom">
+            <button class="bottom-btn essence-open-btn" title="멀티미디어북 에센스" tabindex="1">
+                <div class="bottom-btn-icon">💡</div>
+                <div class="bottom-btn-text">멀티미디어북 에센스</div>
+            </button>
+            <button class="bottom-btn pack-open-btn" title="학습꾸러미" tabindex="1">
+                <div class="bottom-btn-icon">📦</div>
+                <div class="bottom-btn-text">학습꾸러미</div>
+            </button>
+            <button class="bottom-btn thumnail-btn" title="페이지 모아보기" tabindex="1">
+                <div class="bottom-btn-icon">📄</div>
+                <div class="bottom-btn-text">페이지 모아보기</div>
+            </button>
+        </div>
+
+        <!-- Popup Windows -->
+        <div class="popup_view" data-popup-name="popup_1" tabindex="5" aria-label="팝업 영역">
+            <div class="popup_box">
+                <div class="popup_header">
+                    <div class="popup_title" tabindex="6" aria-label="서아의 아침">서아의 아침</div>
+                    <button class="popup_close_btn" tabindex="1000" aria-label="활동창 닫기">×</button>
+                </div>
+                <div class="popup_content">
+                    <div class="popup_video_box">
+                        <div class="video_play_embed_box">
+                            <video class="js-player" controls>
+                                <source src="about:blank" type="video/mp4">
+                                비디오를 지원하지 않는 브라우저입니다.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Scripts -->
+    <script src="js/viewer.js"></script>
+</body>
+</html>
